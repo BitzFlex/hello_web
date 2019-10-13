@@ -13,7 +13,7 @@ defmodule HelloWebWeb.PageController do
     <BODY>
         <h1> Hello Phoenix Web </h1>
     </BODY>
-    </HTML>  
+    </HTML>
     """
   end
 
@@ -27,18 +27,21 @@ defmodule HelloWebWeb.PageController do
     <BODY>
         <h1> #{now} </h1>
     </BODY>
-    </HTML>  
+    </HTML>
     """
   end
 
 
   def calc(conn,%{"a" => valueA , "b" => valueB}) do
     sumValue = String.to_integer(valueA) + String.to_integer(valueB)
-    json conn, %{result: :ok, sum: sumValue}       
+    json conn, %{result: :ok, sum: sumValue}
   end
 
   def calc(conn,_param) do
-    json conn, %{result: :error}    
+    json conn, %{result: :error}
   end
+
+
+
 
 end

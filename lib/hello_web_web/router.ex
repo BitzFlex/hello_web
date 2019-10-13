@@ -16,9 +16,13 @@ defmodule HelloWebWeb.Router do
   scope "/", HelloWebWeb do
     pipe_through :browser
 
-    get "/", PageController, :index 
+    get "/", PageController, :index
     get "/hello" , PageController, :hello
     get "/now" , PageController, :now
     get "/calc" , PageController, :calc
+
+
+    get "/render1" , PageController, :render1
+
   end
 end

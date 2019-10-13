@@ -28,3 +28,4 @@ hello_web-*.tar
 /priv/static/
 
 /.elixir_ls/
+mix.lock
