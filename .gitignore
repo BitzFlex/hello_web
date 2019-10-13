@@ -29,3 +29,7 @@ hello_web-*.tar
 
 /.elixir_ls/
 mix.lock
+.DS_Store
+lib/.DS_Store
+lib/hello_web_web/.DS_Store
+lib/hello_web_web/templates/.DS_Store

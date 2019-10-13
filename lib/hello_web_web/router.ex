@@ -22,7 +22,8 @@ defmodule HelloWebWeb.Router do
     get "/calc" , PageController, :calc
 
 
-    get "/render1" , PageController, :render1
+    get "/response1" , PageController, :response1
+    get "/response2" , PageController, :response2
 
   end
 end

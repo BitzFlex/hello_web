@@ -42,6 +42,14 @@ defmodule HelloWebWeb.PageController do
   end
 
 
+  def response1(conn, _param) do
+    render(conn, "response1.html")
+  end
 
+
+  def response2(conn, _param) do
+    render(conn, "response2.html")
+  end
 
 end
+
