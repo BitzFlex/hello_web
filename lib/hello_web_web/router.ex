@@ -25,5 +25,7 @@ defmodule HelloWebWeb.Router do
     get "/response1" , PageController, :response1
     get "/response2" , PageController, :response2
 
+    get "/greeting1" , PageController, :greeting1
+    get "/greeting2" , PageController, :greeting2
   end
 end

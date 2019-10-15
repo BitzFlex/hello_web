@@ -51,5 +51,17 @@ defmodule HelloWebWeb.PageController do
     render(conn, "response2.html")
   end
 
+
+  def greeting1(conn, %{"name" => name}) do
+    render(conn, "greeting.html",[name: name])
+  end
+
+  def greeting2(conn, %{"name" => name}) do
+    conn 
+      |> assign(:name, name)
+      |> render("greeting.html")
+  end
+
+
 end
 
